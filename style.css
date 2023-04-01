@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Diplomata+SC&family=Playfair+Display&family=Vast+Shadow&display=swap');
+
+:root {
+    /*Colors*/
+    --W: hsl(0, 0%, 100%);
+    --LG: hsl(212, 45%, 89%);
+    --GB: hsl(220, 15%, 55%);
+    --DB: hsl(218, 44%, 22%);
+    /* Font size */
+    --PS: 15px;
+    /* Font*/
+    --FF: "Outfit", sans-serif;
+    --MDW: 500;
+    --HFW: 800;
+    /* Qr code width*/
+    --QD: 300px;
+    --P: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: var(--LG);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--FF);
+    position: relative;
+}
+
+.qr-code-card {
+    background-color: var(--W);
+    border-radius: 14px;
+    padding: var(--P);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px #b7c0c8;
+    overflow-wrap: break-word;
+    width: calc(var(--QD) + 2rem);
+}
+.qr-code-card p {
+    line-height: 1.5;
+    text-align:center;
+}
+.qr-code-card p:nth-child(2) {
+    font-weight: var(--HFW);
+    color: var(--DB);
+    font-size: 1.2rem;
+    word-spacing: -3px;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.qr-code-card p:nth-child(3) {
+    font-weight: var(--MDW);
+    color: var(--GB);
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    word-spacing: -1px;
+    opacity: 0.9;
+}
+
+.qr-code {
+    border-radius: 14px;
+    width: var(--QD);
+    height: var(--QD);
+}
+
+.attribution {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
